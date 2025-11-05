@@ -1,14 +1,12 @@
 
 // The export statement makes these settings available to other files in 11ty
 module.exports = function(eleventyConfig) {
+  // Pass through static files
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
 
-  module.exports = function(eleventyConfig) {
-
-  // Shortcode for text at top of screen
+  // Shortcode for page title
   eleventyConfig.addShortcode("pageTitle", function(mainTitle, highlightedText) {
-    return '<h1>${mainTitle} <strong>${highlightedText}</strong></h1>';
+    return `<h1>${mainTitle} <strong>${highlightedText}</strong></h1>`;
   });
-
 };
