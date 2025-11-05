@@ -56,6 +56,12 @@ img {
     outline-width: 2px;
 }
 
+p {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px auto;
+}
+
 /* ITEMS CONTAINER */
 .items {
     display: flex;
@@ -66,20 +72,26 @@ img {
     align-items: flex-start;
     margin: 40px auto;
     text-align: center;
-    max-width: 95%;
+    max-width: 100%;
 }
 
-.items figure {
+.items figure, .items p {
   flex: 1 1 300px;
   margin: 0;
+  max-width: 27%
 }
 
 .items img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
 .items figcaption {
     margin-top: 10px;
     font-size: 2em;
+}
+
+.items p {
+    font-size: 2em;
+    line-height: 1.5;
 }
